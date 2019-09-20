@@ -184,18 +184,16 @@ class StringTest {
         int sum = 0;
         // TODO: Write some code to calculate the checksum of the string. The checksum is the sum of each string char.
         // <--Start
-        int value = 0;
-        String[] words = text.split("\\s+");
+        //String[] words = text.split("\\s+");
         for(int x = 0; x <= text.length()-1;x++)
         {
-            value += 0;
+            sum += text.charAt(x);
         }
-        //System.out.println(value);
+
         // --End-->
-
-        assertEquals(3655, words);
+        assertEquals(3655, sum);
     }
-
+//"\u306a" + "\u306b" + "\u3053" + "\u308c";
     @Test
     void should_convert_unicode_escape() {
         final String expected = "なにこれ";
@@ -206,11 +204,12 @@ class StringTest {
         // こ - U+3053
         // れ - U+308c
         // <--Start
-        final String actual = "なにこれ";
+        final String actual = "\u306a" + "\u306b" + "\u3053" + "\u308c";
         // --End-->
 
         assertEquals(expected, actual);
     }
+
 
     @SuppressWarnings("unused")
     @Test
