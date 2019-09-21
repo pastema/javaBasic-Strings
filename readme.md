@@ -16,9 +16,13 @@ Each repository contains a gradle java project with a number of unit tests. The 
 The 4 questions are:
 
 1. What is the knowledge point of the test? Where is the offical document to the knowledge point?
+	- learn how to manipulate strings and the use of StringBuilder, regex, and ascii.
 1. Why the test failed at first?
+	- I used the incorrect regex code and ascii codes
 1. Why you corrected the test that way?
+	- because I was getting the wrong output and found a way to resolve it.
 1. Do you have further questions on this knowledge point?
+	-	None.
 
 ## Example
 
